@@ -2,6 +2,10 @@ body {
     background-color: mediumseagreen;
 }
 
+.mainContainer {
+    position: relative;
+}
+
 .fullPage {
     display: flex;
     flex-direction: row;
@@ -39,4 +43,21 @@ body {
 .cardLink {
     display: flex;
     justify-content: center;
+}
+
+#technologiesPage {
+    display: inline;
+}
+
+footer {
+    position: fixed;
+    bottom: 1px;
+    left: 0.1%;
+    background-color: gold;
+    width: 99.5%;
+    border: 2px black solid;
+}
+
+.footPar {
+    line-height: 0.25;
 }
