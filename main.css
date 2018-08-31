@@ -1,3 +1,42 @@
 body {
     background-color: mediumseagreen;
 }
+
+.fullPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    background-color: coral;
+    border: 2px black solid;
+    border-radius: 3px;
+    margin-left: 1%;
+    width: 45%;
+    margin: 2%;
+}
+
+.cardScreen {
+    max-width: 75%;
+    border: 1px black solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.cardTitle {
+    text-align: center;
+}
+
+.cardPar {
+    text-align: left;
+    padding-left: 2%;
+}
+
+.cardLink {
+    display: flex;
+    justify-content: center;
+}
