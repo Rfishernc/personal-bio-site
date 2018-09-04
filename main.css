@@ -2,6 +2,11 @@ body {
     background-color: mediumseagreen;
 }
 
+.navbar {
+    background-color: wheat;
+    border: 2px black solid;
+}
+
 .mainContainer {
     position: relative;
 }
@@ -53,7 +58,7 @@ footer {
     position: fixed;
     bottom: 1px;
     left: 0.1%;
-    background-color: gold;
+    background-color: wheat;
     width: 99.5%;
     border: 2px black solid;
 }
@@ -61,3 +66,43 @@ footer {
 .footPar {
     line-height: 0.25;
 }
+
+.name {
+    text-align: center;
+}
+
+#navLinks {
+    diplay: inline;
+    padding: 0 10px 0 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#navLinks li {
+    display: inline;
+}
+
+#techs {
+    diplay: inline;
+    padding: 0 10px 0 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#techs li {
+    display: inline;
+}
+
+#bioPage {
+    display: block;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+
+
