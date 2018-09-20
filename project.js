@@ -38,7 +38,7 @@ let projects = [ {
 
 function writeToDom(string, divId) {
     const div = document.getElementById(divId);
-    div.innerHTML += string;
+    div.innerHTML = string;
 }
 
 function createProjectCards() {
@@ -58,4 +58,44 @@ function createProjectCards() {
     writeToDom(tempString, 'projectsPage');
 }
 
-createProjectCards();
+
+function clickedBio() {
+  document.getElementById('navToBio').addEventListener('click', function() {
+    let tempString = 
+      `<div class="fullPage" id="bioPage">
+        <p class='title'>Bio</p>
+        <p class='bio'>I'm some guy.</p>
+      </div>`;
+    writeToDom(tempString, 'mainPage');
+  })
+}
+
+function clickedTech() {
+  document.getElementById('navToTechnologies').addEventListener('click', function() {
+    let tempString = 
+      `<div class="fullPage" id="technologiesPage">
+        <p class='title'>Technologies</p>
+        <ul id='techs'>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </div>`;
+    writeToDom(tempString, 'mainPage');
+  })
+}
+
+function clickedProjects() {
+  document.getElementById('navToProjects').addEventListener('click', function() {
+    let tempString = 
+      `<p class='title'>Projects</p>
+      <div class="fullPage" id="projectsPage"></div>`;
+    writeToDom(tempString, 'mainPage');
+    createProjectCards();
+  })
+}
+
+clickedBio();
+clickedTech();
+clickedProjects();
