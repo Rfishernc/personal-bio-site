@@ -4,7 +4,11 @@
   "description": "This project is to be a personal hub site with information/links to projects I have done.  Designed to be a \"single page application\"",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production webpack",
+    "lint": "eslint ./src --ext .js",
+    "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot",
+    "start": "npm run lint && npm run dev",
+    "projects": "json-server db/personalProjects.json --port 3003"
   },
   "repository": {
     "type": "git",
