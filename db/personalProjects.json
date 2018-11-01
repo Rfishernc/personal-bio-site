@@ -2,8 +2,8 @@
   "projects": [
     {
       "title": "Cool Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-      "description": "This is the best project", 
+      "description": "This is the best project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
@@ -11,8 +11,8 @@
     },
     {
       "title": "Absurdly Cool Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-      "description": "This project is out of control", 
+      "description": "This project is out of control",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
       "technologiesUsed": "COBOL, FORTRAN, binary",
       "available": true,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
@@ -20,8 +20,8 @@
     },
     {
       "title": "Frighteningly Cool Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
       "description": "Please send help, this project's too cool", 
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
       "technologiesUsed": "Vacuum tubes and blinking lights",
       "available": true,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
@@ -29,8 +29,8 @@
     },
     {
       "title": "The Not Cool Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
       "description": "Project designed by a big jerk", 
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
       "technologiesUsed": "Chalkboard and abacus",
       "available": false,
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 

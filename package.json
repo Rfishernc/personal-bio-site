@@ -2,7 +2,7 @@
   "name": "personal-bio-site",
   "version": "1.0.0",
   "description": "This project is to be a personal hub site with information/links to projects I have done.  Designed to be a \"single page application\"",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "lint": "eslint ./src --ext .js",

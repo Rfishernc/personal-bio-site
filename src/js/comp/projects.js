@@ -18,10 +18,13 @@ function createProjectCards() {
       }
     }
     util.writeToDom(tempString, 'projectsPage');
-  });
+  }).catch(console.log('shits fucked'));
 }
 
 function initialLoad() {
+  const tempString = `<p class='title'>Projects</p>
+                        <div class="fullPage" id="projectsPage"></div>`;
+  util.writeToDom(tempString, 'mainPage');
   createProjectCards();
 }
 
