@@ -1,15 +1,5 @@
-import $ from 'jquery';
+import axios from 'axios';
 
-function getProjects() {
-  return new Promise((resolve, reject) => {
-    $.get('http://localhost:3003/projects')
-      .done((data) => {
-        resolve(data);
-      })
-      .fail((error) => {
-        reject(error);
-      });
-  });
-}
+function getProjects() { return axios.get('http://localhost:3003/projects'); }
 
 export default { getProjects };
