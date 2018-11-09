@@ -102,5 +102,11 @@ footer {
   font-size: 1.6em;
 }
 
-
+.sunMenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 5000;
+}
 

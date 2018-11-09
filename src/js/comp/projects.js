@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import projectData from '../data/projectsData';
 import util from '../helper/util';
 
@@ -21,6 +22,41 @@ function createProjectCards() {
   }).catch();
 }
 
+function bioBuilder() {
+  const tempString = `<div class="fullPage" id="bioPage">
+                          <p class='title'>Bio</p>
+                          <p class='bio'>I'm some guy.</p>
+                      </div>`;
+  util.writeToDom(tempString, 'mainPage');
+}
+
+function techBuilder() {
+  const tempString = `<div class="fullPage" id="technologiesPage">
+                          <p class='title'>Technologies</p>
+                          <ul id='techs'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                          </ul>
+                        </div>`;
+  util.writeToDom(tempString, 'mainPage');
+}
+
+function projectsBuilder() {
+  const tempString = `<p class='title'>Projects</p>
+                        <div class="fullPage" id="projectsPage"></div>`;
+  util.writeToDom(tempString, 'mainPage');
+  createProjectCards();
+}
+
+function resumeBuilder() {
+  const tempString = `<div class='fullPage' id='resumePage'>
+                        <p class='title'>Resume</p>
+                      </div>`;
+  util.writeToDom(tempString, 'mainPage');
+}
+
 function initialLoad() {
   const tempString = `<p class='title'>Projects</p>
                         <div class="fullPage" id="projectsPage"></div>`;
@@ -28,4 +64,43 @@ function initialLoad() {
   createProjectCards();
 }
 
-export default { createProjectCards, initialLoad };
+function showMenu(posX, posY, image) {
+  document.getElementById('sunProjects').style.left = `${posX}px`;
+  document.getElementById('sunProjects').style.top = `${posY}px`;
+  document.getElementById('sunTech').style.left = `${posX}px`;
+  document.getElementById('sunTech').style.top = `${posY - 100}px`;
+  document.getElementById('sunBio').style.left = `${posX + 100}px`;
+  document.getElementById('sunBio').style.top = `${posY + 100}px`;
+  document.getElementById('sunResume').style.left = `${posX}px`;
+  document.getElementById('sunResume').style.top = `${posY + 100}px`;
+  $('#sunProjects').attr('src', image.sunProjects).show();
+  $('#sunBio').attr('src', image.sunBio).show();
+  $('#sunTech').attr('src', image.sunTech).show();
+  $('#sunResume').attr('src', image.sunResume).show();
+}
+
+function hideMenu() {
+  $('#sunProjects').hide();
+  $('#sunBio').hide();
+  $('#sunTech').hide();
+  $('#sunResume').hide();
+}
+
+function resetMenu(image) {
+  $('#sunProjects').attr('src', image.sunProjects);
+  $('#sunBio').attr('src', image.sunBio);
+  $('#sunTech').attr('src', image.sunTech);
+  $('#sunResume').attr('src', image.sunResume);
+}
+
+export default {
+  createProjectCards,
+  initialLoad,
+  showMenu,
+  hideMenu,
+  bioBuilder,
+  techBuilder,
+  resumeBuilder,
+  projectsBuilder,
+  resetMenu,
+};
