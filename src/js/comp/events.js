@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import projectsComp from './projects';
+import svgComp from './svgComp';
 import sunBio from '../../../images/sunBio.png';
 import sunProjects from '../../../images/sunProjects.png';
 import sunTech from '../../../images/sunTech.png';
@@ -42,14 +43,15 @@ function menuSelect() {
     projectsComp.resetMenu(sunMenu);
     $(`#${selected}`).attr('src', sunMenuHot[`${selected}Hot`]);
   });
-  $('.sunMenu').mouseup((event) => {
-    switch (event.target.id) {
-      case 'sunProjects': projectsComp.projectsBuilder(); break;
-      case 'sunTech': projectsComp.techBuilder(); break;
-      case 'sunBio': projectsComp.bioBuilder(); break;
-      case 'sunResume': projectsComp.resumeBuilder(); break;
-      default: break;
-    }
+  $('.sunMenu').mouseup(() => {
+    svgComp.expandRing(posX, posY);
+    // switch (event.target.id) {
+    //   case 'sunProjects': projectsComp.projectsBuilder(); break;
+    //   case 'sunTech': projectsComp.techBuilder(); break;
+    //   case 'sunBio': projectsComp.bioBuilder(); break;
+    //   case 'sunResume': projectsComp.resumeBuilder(); break;
+    //   default: break;
+    // }
   });
 }
 
