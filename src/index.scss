@@ -1,0 +1,120 @@
+body {
+  background-color: mediumseagreen;
+}
+
+.navbar {
+  background-color: wheat;
+  border: 2px black solid;
+}
+
+.mainContainer {
+  position: relative;
+}
+
+.fullPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  background-color: coral;
+  border: 2px black solid;
+  border-radius: 3px;
+  margin-left: 1%;
+  width: 45%;
+  margin: 2%;
+}
+
+.cardScreen {
+  max-width: 75%;
+  border: 1px black solid;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+.cardPar {
+  text-align: left;
+  padding-left: 2%;
+}
+
+.cardLink {
+  display: flex;
+  justify-content: center;
+}
+
+#technologiesPage {
+  display: inline;
+}
+
+footer {
+  position: fixed;
+  bottom: 1px;
+  left: 0.1%;
+  background-color: wheat;
+  width: 99.5%;
+  border: 2px black solid;
+}
+
+.footPar {
+  line-height: 0.25;
+}
+
+.name {
+  text-align: center;
+}
+
+#navLinks {
+  padding: 0 10px 0 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navLinks li {
+  display: inline;
+}
+
+#techs {
+  padding: 0 10px 0 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#techs li {
+  display: inline;
+}
+
+#bioPage {
+  display: block;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.sunMenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 5000;
+}
+
+#sunResume {
+  display: none;
+  position: absolute;
+  width: 186px;
+  height: 186px;
+  z-index: 5000;
+}
+
