@@ -65,14 +65,14 @@ function initialLoad() {
 }
 
 function showMenu(posX, posY, image) {
-  document.getElementById('sunProjects').style.left = `${posX}px`;
-  document.getElementById('sunProjects').style.top = `${posY}px`;
-  document.getElementById('sunTech').style.left = `${posX}px`;
+  document.getElementById('sunProjects').style.left = `${posX - 100}px`;
+  document.getElementById('sunProjects').style.top = `${posY - 100}px`;
+  document.getElementById('sunTech').style.left = `${posX + 100}px`;
   document.getElementById('sunTech').style.top = `${posY - 100}px`;
   document.getElementById('sunBio').style.left = `${posX + 100}px`;
-  document.getElementById('sunBio').style.top = `${posY + 100}px`;
-  document.getElementById('sunResume').style.left = `${posX}px`;
-  document.getElementById('sunResume').style.top = `${posY + 100}px`;
+  document.getElementById('sunBio').style.top = `${posY + 99}px`;
+  document.getElementById('sunResume').style.left = `${posX - 80}px`;
+  document.getElementById('sunResume').style.top = `${posY + 98}px`;
   $('#sunProjects').attr('src', image.sunProjects).show();
   $('#sunBio').attr('src', image.sunBio).show();
   $('#sunTech').attr('src', image.sunTech).show();
