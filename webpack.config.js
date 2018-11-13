@@ -33,7 +33,7 @@ module.exports = {
       use: 'eslint-loader'
     }, 
     {
-      test: /\.(png|jp(e*)g|svg)$/,  
+      test: /\.(png|jp(e*)g|svg|PNG)$/,  
       use: [{
           loader: 'url-loader',
           options: { 

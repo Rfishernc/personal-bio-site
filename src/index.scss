@@ -2,11 +2,6 @@ body {
   background-color: mediumseagreen;
 }
 
-.navbar {
-  background-color: wheat;
-  border: 2px black solid;
-}
-
 .mainContainer {
   position: relative;
 }
@@ -116,4 +111,8 @@ footer {
   width: 186px;
   height: 186px;
   z-index: 5000;
+}
+
+#bioImage {
+  clip-path: url(#clippy)
 }

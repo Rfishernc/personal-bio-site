@@ -28,6 +28,7 @@ function bioBuilder() {
                           <p class='bio'>I'm some guy.</p>
                       </div>`;
   util.writeToDom(tempString, 'mainPage');
+  document.getElementById('body').style.backgroundColor = 'darkslateblue';
 }
 
 function techBuilder() {
