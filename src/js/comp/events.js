@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import projectsComp from './projects';
+import techsComp from './tech';
 import svgComp from './svgComp';
 import sunBio from '../../../images/sunBio.png';
 import sunProjects from '../../../images/sunProjects.png';
@@ -46,10 +47,10 @@ function menuSelect() {
   $('.sunMenu').mouseup((event) => {
     svgComp.expandRing(posX, posY);
     switch (event.target.id) {
-      case 'sunProjects': setTimeout(() => { projectsComp.projectsBuilder(); }, 4000); break;
-      case 'sunTech': setTimeout(() => { projectsComp.techBuilder(); }, 4000); break;
-      case 'sunBio': setTimeout(() => { projectsComp.bioBuilder(); }, 4000); break;
-      case 'sunResume': setTimeout(() => { projectsComp.resumeBuilder(); }, 4000); break;
+      case 'sunProjects': projectsComp.projectsBuilder(); break;
+      case 'sunTech': techsComp.techsBuilder(); break;
+      case 'sunBio': projectsComp.bioBuilder(); break;
+      case 'sunResume': projectsComp.resumeBuilder(); break;
       default: break;
     }
   });

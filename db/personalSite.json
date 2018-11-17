@@ -1,0 +1,130 @@
+{
+  "logos": {
+    "developmentLogos": {
+    "logo1": {
+      "name": "CSS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FcssLogo.png?alt=media&token=c5c05b3f-578b-41d0-b7ca-ead7921d257f"
+    },
+    "logo2": {
+      "name": "HTML",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FhtmlLogo.png?alt=media&token=e839047d-810e-467a-83b8-084d136feeb9"
+    },
+    "logo3": {
+      "name": "JS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FjsLogo.png?alt=media&token=688e0898-16d7-4e35-ab4a-84296c3d9cbc"
+    },
+    "logo4": {
+      "name": "SCSS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FscssLogo.svg?alt=media&token=6013b122-155a-463c-baf5-c33b68ac34ea"
+    },
+    "logo5": {
+      "name": "Bootstrap",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FbootstrapLogo.png?alt=media&token=facc0e56-a869-4508-891e-47b8dcac4158"
+    },
+    "logo6": {
+      "name": "JQuery",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FjqueryLogo.png?alt=media&token=033ab303-43fe-416f-9d32-14ffa78b7c17"
+    },
+    "logo7": {
+      "name": "Firebase",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FfirebaseLogo.png?alt=media&token=40dca542-8d13-43da-86b3-507460244e05"
+    },
+    "logo8": {
+      "name": "React",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FreactLogo.png?alt=media&token=1d180bfa-48fe-447b-a586-965f0671977d"
+    },
+    "logo9": {
+      "name": "C#",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FcsharpLogo.png?alt=media&token=4b51a075-0247-4665-a323-460fe6c79e75"
+    },
+    "logo10": {
+      "name": "Visual Studio",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FvsLogo.png?alt=media&token=5d54884f-6270-4132-b121-25d511e17951"
+    },
+    "logo11": {
+      "name": "MS .net",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FnetLogo.png?alt=media&token=9946b8f4-5272-4842-bb4b-5fbf217661ac"
+    },
+    "logo12": {
+      "name": "Webpack",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FwebpackLogo.png?alt=media&token=f1d11b87-1d3d-4f65-9476-c4df9045dc1b"
+    },
+    "logo13": {
+      "name": "Git",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FgitLogo.png?alt=media&token=d330d509-7b04-433c-9f44-459f6a36fc93"
+    },
+    "logo14": {
+      "name": "GitHub",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FgithubLogo.svg?alt=media&token=1c6233eb-f4b2-4818-8b7a-9db78acbb08e"
+    },
+    "logo15": {
+      "name": "SQL",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsqlLogo.svg?alt=media&token=9c353c90-6c37-4998-b88f-d5b6f9baaa45"
+    },
+    "logo16": {
+      "name": "SVG",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsvgLogo.png?alt=media&token=a5932734-ce4c-4a76-940e-477382efb97f"
+    }
+  },
+  "nondevelopmentLogos": {
+    "logo1": {
+      "name": "MS Project",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FprojectLogo.png?alt=media&token=4a6890a1-15eb-42dd-b631-2691309f038a"
+    },
+    "logo2": {
+      "name": "Illustrator",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FaiLogo.png?alt=media&token=d4c0b0be-0a9c-4492-b939-b202da9ae450"
+    },
+    "logo3": {
+      "name": "AutoCAD",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FautocadLogo.png?alt=media&token=d0f1e51f-ea3d-469b-b79f-61d5430dccd6"
+    },
+    "logo4": {
+      "name": "Sugar CRM",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsugarcrmLogo.png?alt=media&token=50e38f77-6dd4-423d-a75d-7bad25271022"
+    },
+    "logo5": {
+      "name": "Unity",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FunityLogo.png?alt=media&token=f468b854-0508-4eb5-834c-1637e2c8ecda"
+    }
+  }
+  },
+  "projects": {
+    "project1": {
+      "title": "Cool Project", 
+      "description": "This is the best project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    },
+    "project2": {
+      "title": "Absurdly Cool Project", 
+      "description": "This project is out of control",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
+      "technologiesUsed": "COBOL, FORTRAN, binary",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    },
+    "project3": {
+      "title": "Frighteningly Cool Project", 
+      "description": "Please send help, this project's too cool", 
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+      "technologiesUsed": "Vacuum tubes and blinking lights",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    },
+    "project4": {
+      "title": "The Not Cool Project", 
+      "description": "Project designed by a big jerk", 
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+      "technologiesUsed": "Chalkboard and abacus",
+      "available": false,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    }
+  }
+}

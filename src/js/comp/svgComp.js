@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import snap from 'snapsvg';
 
 function expandRing(posX, posY) {
   const svgString = `<svg width='2000' height='2000' id='svgRing' style='position:absolute; left:0; top:0; z-index:4000'>
@@ -23,9 +24,18 @@ function expandRing(posX, posY) {
   $('#body').append(svgString);
   $('.fullPage').toggleClass('clipMeOut');
   setTimeout(() => {
-    $('#svgRing').hide();
+    $('#svgRing').remove();
     $('.fullPage').toggleClass('clipMeOut');
   }, 4000);
 }
 
 export default { expandRing };
+
+/* <path d="
+    M 575, 325
+    a 200,200 0 1,0 400,0
+    a 200,200 0 1,0 -400,0
+    a 100,100 0 1,0 200,0
+    a 100,100 0 1,0 -200,0
+    " fill-rule='evenodd'>
+    </path> */

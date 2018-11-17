@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import projectData from '../data/projectsData';
-import util from '../helper/util';
 
 function createProjectCards() {
   projectData.getProjects().then((projects) => {
@@ -18,7 +17,7 @@ function createProjectCards() {
                       </div>`;
       }
     }
-    util.writeToDom(tempString, 'projectsPage');
+    $('#projectsPage').html(tempString);
   }).catch();
 }
 
@@ -27,41 +26,33 @@ function bioBuilder() {
                           <p class='title'>Bio</p>
                           <p class='bio'>I'm some guy.</p>
                       </div>`;
-  util.writeToDom(tempString, 'mainPage');
-  document.getElementById('body').style.backgroundColor = 'darkslateblue';
-}
-
-function techBuilder() {
-  const tempString = `<div class="fullPage" id="technologiesPage">
-                          <p class='title'>Technologies</p>
-                          <ul id='techs'>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Git</li>
-                          </ul>
-                        </div>`;
-  util.writeToDom(tempString, 'mainPage');
+  $('#bioPage').html(tempString);
+  $('.mainPage').hide();
+  $('#bioPage').show();
 }
 
 function projectsBuilder() {
   const tempString = `<p class='title'>Projects</p>
                         <div class="fullPage" id="projectsPage"></div>`;
-  util.writeToDom(tempString, 'mainPage');
+  $('#projectsPage').html(tempString);
   createProjectCards();
+  $('.mainPage').hide();
+  $('#projectsPage').show();
 }
 
 function resumeBuilder() {
   const tempString = `<div class='fullPage' id='resumePage'>
                         <p class='title'>Resume</p>
                       </div>`;
-  util.writeToDom(tempString, 'mainPage');
+  $('#resumePage').html(tempString);
+  $('.mainPage').hide();
+  $('#resumePage').show();
 }
 
 function initialLoad() {
   const tempString = `<p class='title'>Projects</p>
                         <div class="fullPage" id="projectsPage"></div>`;
-  util.writeToDom(tempString, 'mainPage');
+  $('#projectsPage').html(tempString);
   createProjectCards();
 }
 
@@ -100,7 +91,6 @@ export default {
   showMenu,
   hideMenu,
   bioBuilder,
-  techBuilder,
   resumeBuilder,
   projectsBuilder,
   resetMenu,

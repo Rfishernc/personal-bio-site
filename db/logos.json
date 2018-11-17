@@ -1,0 +1,88 @@
+{
+  "logos": {
+    "logo1": {
+      "name": "CSS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FcssLogo.png?alt=media&token=7aee86cd-2926-4f84-a74a-077a3cb8c108"
+    },
+    "logo2": {
+      "name": "HTML",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FhtmlLogo.png?alt=media&token=c3a8d433-5409-4ac2-8f91-037c26200763"
+    },
+    "logo3": {
+      "name": "JS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FjsLogo.png?alt=media&token=688e0898-16d7-4e35-ab4a-84296c3d9cbc"
+    },
+    "logo4": {
+      "name": "SCSS",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FscssLogo.svg?alt=media&token=6013b122-155a-463c-baf5-c33b68ac34ea"
+    },
+    "logo5": {
+      "name": "Bootstrap",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FbootstrapLogo.png?alt=media&token=facc0e56-a869-4508-891e-47b8dcac4158"
+    },
+    "logo6": {
+      "name": "JQuery",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FjqueryLogo.png?alt=media&token=770af9f0-66d2-4df1-8094-a3efdd140020"
+    },
+    "logo7": {
+      "name": "Firebase",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FfirebaseLogo.png?alt=media&token=c900d3f5-8d19-4878-bbe9-e3210cf27b3e"
+    },
+    "logo8": {
+      "name": "React",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FreactLogo.png?alt=media&token=1d180bfa-48fe-447b-a586-965f0671977d"
+    },
+    "logo9": {
+      "name": "C#",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FcsharpLogo.png?alt=media&token=4b51a075-0247-4665-a323-460fe6c79e75"
+    },
+    "logo10": {
+      "name": "Visual Studio",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FvsLogo.png?alt=media&token=35add96f-d243-440d-9c9d-0e3356217cfa"
+    },
+    "logo11": {
+      "name": "MS .net",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FnetLogo.png?alt=media&token=9946b8f4-5272-4842-bb4b-5fbf217661ac"
+    },
+    "logo12": {
+      "name": "Webpack",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FwebpackLogo.png?alt=media&token=f1d11b87-1d3d-4f65-9476-c4df9045dc1b"
+    },
+    "logo13": {
+      "name": "Git",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FgitLogo.png?alt=media&token=d330d509-7b04-433c-9f44-459f6a36fc93"
+    },
+    "logo14": {
+      "name": "GitHub",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FgithubLogo.svg?alt=media&token=1c6233eb-f4b2-4818-8b7a-9db78acbb08e"
+    },
+    "logo15": {
+      "name": "SQL",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsqlLogo.png?alt=media&token=d9c92a99-9ee5-4ded-bf3d-016ce3ec34cb"
+    },
+    "logo16": {
+      "name": "Sugar CRM",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsugarcrmLogo.png?alt=media&token=da4189cf-8960-409c-9263-e904efb10846"
+    },
+    "logo17": {
+      "name": "Illustrator",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FaiLogo.png?alt=media&token=d4c0b0be-0a9c-4492-b939-b202da9ae450"
+    },
+    "logo18": {
+      "name": "AutoCAD",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FautocadLogo.png?alt=media&token=6963011d-a788-4c5e-bdad-8d9ebc3d2a9c"
+    },
+    "logo19": {
+      "name": "MS Project",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FprojectLogo.png?alt=media&token=4a6890a1-15eb-42dd-b631-2691309f038a"
+    },
+    "logo20": {
+      "name": "Unity",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FunityLogo.png?alt=media&token=e4170337-7195-42d0-b4b5-2ed311bae884"
+    },
+    "logo21": {
+      "name": "SVG",
+      "src": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/logos%2FsvgLogo.png?alt=media&token=a5932734-ce4c-4a76-940e-477382efb97f"
+    }
+  }
+}
