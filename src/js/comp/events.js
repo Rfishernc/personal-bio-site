@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import projectsComp from './projects';
+import svgComp from './svgComp';
 import sunBio from '../../../images/sunBio.png';
 import sunProjects from '../../../images/sunProjects.png';
 import sunTech from '../../../images/sunTech.png';
@@ -32,7 +33,7 @@ function clickedAndHeld() {
   });
   document.getElementById('body').addEventListener('mouseup', () => {
     stillHolding = false;
-    projectsComp.hideMenu();
+    setTimeout(projectsComp.hideMenu, 2000);
   });
 }
 
@@ -43,11 +44,12 @@ function menuSelect() {
     $(`#${selected}`).attr('src', sunMenuHot[`${selected}Hot`]);
   });
   $('.sunMenu').mouseup((event) => {
+    svgComp.expandRing(posX, posY);
     switch (event.target.id) {
-      case 'sunProjects': projectsComp.projectsBuilder(); break;
-      case 'sunTech': projectsComp.techBuilder(); break;
-      case 'sunBio': projectsComp.bioBuilder(); break;
-      case 'sunResume': projectsComp.resumeBuilder(); break;
+      case 'sunProjects': setTimeout(() => { projectsComp.projectsBuilder(); }, 4000); break;
+      case 'sunTech': setTimeout(() => { projectsComp.techBuilder(); }, 4000); break;
+      case 'sunBio': setTimeout(() => { projectsComp.bioBuilder(); }, 4000); break;
+      case 'sunResume': setTimeout(() => { projectsComp.resumeBuilder(); }, 4000); break;
       default: break;
     }
   });

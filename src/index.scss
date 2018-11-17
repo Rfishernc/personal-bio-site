@@ -1,10 +1,9 @@
-body {
-  background-color: mediumseagreen;
+html, body {
+  margin: 0; height: 100%; overflow: hidden;
 }
 
-.navbar {
-  background-color: wheat;
-  border: 2px black solid;
+body {
+  background-color: mediumseagreen;
 }
 
 .mainContainer {
@@ -118,3 +117,10 @@ footer {
   z-index: 5000;
 }
 
+#clipMe {
+  clip-path: url(#clippy);
+}
+
+.clipMeOut {
+  clip-path: url(#clippyOutside);
+}
