@@ -26,10 +26,15 @@ module.exports = {
     extractScss
   ],
   module: {
-    rules: [{
+    rules: [
+      {
+      test: require.resolve('snapsvg/dist/snap.svg.js'),
+      use: 'imports-loader?this=>window,fix=>module.exports=0'
+    },
+    {
       enforce: 'pre',
       test: /\.js$/,
-      exclude: /node_modules/,
+      exclude: /(node_modules|.svg.js)/,
       use: 'eslint-loader'
     }, 
     {
@@ -57,6 +62,11 @@ module.exports = {
         fallback: 'style-loader'
       })
     }]
+  },
+  resolve: {
+    alias: {
+      snapsvg: 'snapsvg/dist/snap.svg.js'
+    }
   },
   devServer: {
     historyApiFallback: true,

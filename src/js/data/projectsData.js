@@ -20,4 +20,6 @@ const getProjects = () => new Promise((resolve, reject) => {
     });
 });
 
-export default { getProjects };
+export default {
+  getProjects,
+};

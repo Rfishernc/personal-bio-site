@@ -1,5 +1,9 @@
 import $ from 'jquery';
 import projectsComp from './projects';
+import techsComp from './tech';
+import bioComp from './bio';
+import resumeComp from './resume';
+import menuComp from './menu';
 import svgComp from './svgComp';
 import sunBio from '../../../images/sunBio.png';
 import sunProjects from '../../../images/sunProjects.png';
@@ -19,7 +23,7 @@ const sunMenuHot = {
   sunProjectsHot, sunTechHot, sunBioHot, sunResumeHot,
 };
 
-function clickedAndHeld() {
+const clickedAndHeld = () => {
   let stillHolding = true;
   document.getElementById('body').addEventListener('mousedown', (event) => {
     stillHolding = true;
@@ -27,34 +31,35 @@ function clickedAndHeld() {
       if (stillHolding) {
         posX = event.clientX - 100;
         posY = event.clientY - 100;
-        projectsComp.showMenu(posX, posY, sunMenu);
+        menuComp.showMenu(posX, posY, sunMenu);
       }
     }, 1500);
   });
   document.getElementById('body').addEventListener('mouseup', () => {
     stillHolding = false;
-    setTimeout(projectsComp.hideMenu, 2000);
+    setTimeout(menuComp.hideMenu, 2000);
   });
-}
+};
 
-function menuSelect() {
+const menuSelect = () => {
   $('.sunMenu').mouseover((event) => {
     const selected = event.target.id;
-    projectsComp.resetMenu(sunMenu);
+    menuComp.resetMenu(sunMenu);
     $(`#${selected}`).attr('src', sunMenuHot[`${selected}Hot`]);
   });
   $('.sunMenu').mouseup((event) => {
     svgComp.expandRing(posX, posY);
     switch (event.target.id) {
-      case 'sunProjects': setTimeout(() => { projectsComp.projectsBuilder(); }, 4000); break;
-      case 'sunTech': setTimeout(() => { projectsComp.techBuilder(); }, 4000); break;
-      case 'sunBio': setTimeout(() => { projectsComp.bioBuilder(); }, 4000); break;
-      case 'sunResume': setTimeout(() => { projectsComp.resumeBuilder(); }, 4000); break;
+      case 'sunProjects': projectsComp.projectsBuilder(); break;
+      case 'sunTech': techsComp.techsBuilder(); break;
+      case 'sunBio': bioComp.bioBuilder(); break;
+      case 'sunResume': resumeComp.resumeBuilder(); break;
       default: break;
     }
   });
-}
+};
 
 export default {
-  clickedAndHeld, menuSelect,
+  clickedAndHeld,
+  menuSelect,
 };
