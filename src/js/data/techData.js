@@ -40,4 +40,7 @@ const getNondev = () => new Promise((resolve, reject) => {
     });
 });
 
-export default { getDev, getNondev };
+export default {
+  getDev,
+  getNondev,
+};

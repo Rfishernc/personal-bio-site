@@ -51,10 +51,6 @@ body {
   justify-content: center;
 }
 
-#technologiesPage {
-  display: inline;
-}
-
 footer {
   position: fixed;
   bottom: 1px;
@@ -108,7 +104,7 @@ footer {
   position: absolute;
   width: 200px;
   height: 200px;
-  z-index: 5000;
+  z-index: 10000;
 }
 
 #sunResume {
@@ -116,15 +112,11 @@ footer {
   position: absolute;
   width: 186px;
   height: 186px;
-  z-index: 5000;
+  z-index: 10000;
 }
 
 .clipMe {
   clip-path: url(#clippy);
-}
-
-.clipMeOut {
-  clip-path: url(#clippyOutside);
 }
 
 .techImg {
@@ -163,4 +155,20 @@ footer {
   border-radius: 3px;
   padding: 3px;
   margin-top: 10px;
+}
+
+#projectsPage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  z-index: 8000;
+}
+
+#technologiesPage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline;
+  z-index: 300;
 }

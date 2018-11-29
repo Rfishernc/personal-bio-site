@@ -41,8 +41,22 @@ const nondevBuilder = (incString) => {
   });
 };
 
+const hideForTech = () => {
+  $('#projectsPage').hide();
+  $('#resumePage').hide();
+  $('#bioPage').hide();
+};
+
+const clipForTech = () => {
+  $('#projectsPage').toggle('.clipMe');
+  $('#resumePage').toggle('.clipMe');
+  $('#bioPage').toggle('.clipMe');
+};
+
 const techsBuilder = () => {
-  $('.mainPage').hide();
+  setTimeout(hideForTech, 4000);
+  clipForTech();
+  // $('.mainPage').hide();
   $('#techPage').show();
   devBuilder().then((tempString) => {
     nondevBuilder(tempString);
@@ -52,4 +66,6 @@ const techsBuilder = () => {
     });
 };
 
-export default { techsBuilder };
+export default {
+  techsBuilder,
+};
