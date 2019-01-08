@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'bootstrap';
 import projectData from '../data/projectsData';
 
 const hideForProjects = () => {
@@ -13,23 +14,47 @@ const clipForProjects = () => {
   $('#bioPage').toggle('.clipMe');
 };
 
+const clickedCard = () => {
+  $('.cardHeader').on('click', ((event) => {
+    $('.cardBody').hide();
+    $(event.target).siblings().show();
+  }));
+};
+
 const createProjectCards = () => {
   projectData.getProjects().then((projects) => {
     let tempString = '';
     for (let i = 0; i < projects.length; i += 1) {
-      const prop = Object.getOwnPropertyNames(projects[i]);
       if (projects[i].available === true) {
+        const compArray = [];
+        const modalArray = [];
+        Object.keys(projects[i].components).forEach((component) => {
+          compArray.push(projects[i].components[component]);
+          modalArray.push(component);
+        });
+        let componentString = '';
+        for (let j = 0; j < compArray.length; j += 1) {
+          componentString += `<button class='btn btn-sm btn-info compButton' data-toggle="modal" data-target="#${modalArray[j]}">${compArray[j]}</button>`;
+        }
         tempString += `<div class='card'>
-                        <h3 class='cardTitle'>${projects[i].title}</h3>
-                        <img src='${projects[i].screenshot}' class='cardScreen'>
-                        <p class='cardPar'>${prop[2]}: ${projects[i].description}</p>
-                        <p class='cardPar'>${prop[3]}: ${projects[i].technologiesUsed}</p>
-                        <a href='${projects[i].url}' target='_blank' class='cardLink'>Project Link</a>
-                        <a href='${projects[i].githubUrl}' target='_blank' class='cardLink'>Github Link</a>
+                        <button class='btn btn-primary cardHeader'>${projects[i].title}</button>
+                        <div class='cardBody' style='display:none'>
+                          <img src='${projects[i].screenshot}' class='cardScreen'>
+                          <p class='cardPar'>${projects[i].description}</p>
+                          <p class='cardPar'>Technologies Used: ${projects[i].technologiesUsed}</p>
+                          <div class='compDiv'>
+                            ${componentString}
+                          </div>
+                          <div class='cardLinkDiv'>
+                            <a href='${projects[i].url}' target='_blank' class='cardLink'>Project Link</a>
+                            <a href='${projects[i].githubUrl}' target='_blank' class='cardLink'>Github Link</a>
+                          </div>
+                        </div>
                       </div>`;
       }
     }
     $('#projectsPage').html(tempString);
+    clickedCard();
   }).catch();
 };
 
@@ -55,4 +80,5 @@ export default {
   createProjectCards,
   initialLoad,
   projectsBuilder,
+  // createProjectCards2,
 };

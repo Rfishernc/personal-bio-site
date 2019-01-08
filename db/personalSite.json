@@ -91,31 +91,44 @@
   },
   "projects": {
     "project1": {
-      "title": "Cool Project", 
-      "description": "This is the best project",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "title": "Chatterbox", 
+      "description": "A chat site with a message log with editable messages.  Includes multiple color themes, emoji commands, a gif selector utilizing the Giphy API, and multiple chatbots that can respond to each other.  The site was built as part of a group project with myself personally being responsible for building the message log structure and edit and delete message functions.  I also built the user selection, chatbots, gif selector, emoji support, and for our friends in the land down under - the Austrailian mode. Select the links below for additional information on specific components.",
+      "screenshot": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/chatter.PNG?alt=media&token=7cceae07-844c-4691-b409-4404a2229c88",  
+      "technologiesUsed": "HTML, CSS, JavaScript w/ modules, Git/Github",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": " https://chatterbox-60a32.firebaseapp.com", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/chatty-allen-wrenches",
+      "components": {
+        "messageModal": "Messages",
+        "chatbotModal": "ChatBots",
+        "emojiModal": "Emoji Commands",
+        "gifModal": "Gif Selector"
+      }
     },
     "project2": {
-      "title": "Absurdly Cool Project", 
-      "description": "This project is out of control",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",  
-      "technologiesUsed": "COBOL, FORTRAN, binary",
+      "title": "Pathetic Connect", 
+      "description": "A personal dashboard site using Google authentication and Firebase database access.  Built as a group project, I was personally responsible for building the friends functionality for the site and integrating it with the other components.  Users can use their friends tab to view a list of other users they are currently friends with, send friend requests to other users, and view and accept/decline pending requests.  I also added an avatar component allowing users to select an avatar from a list of existing images hosted through firebase storage, or upload their own image to use.  Select the links below for additional information on specific components.",
+      "screenshot": "https://firebasestorage.googleapis.com/v0/b/personal-site-55542.appspot.com/o/Nutshell.png?alt=media&token=db6a8085-82b9-459d-a2cf-1eba1e6f6c31",  
+      "technologiesUsed": "HTML, SCSS, JS, JQuery, Webpack, Firebase, Axios, Bootstrap",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux",
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://nutshell-mongos.firebaseapp.com/",
+      "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-mongongos",
+      "components": {
+        "friendModal": "Friends List",
+        "avatarModal": "Avatars"
+      }
     },
     "project3": {
-      "title": "Frighteningly Cool Project", 
-      "description": "Please send help, this project's too cool", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
-      "technologiesUsed": "Vacuum tubes and blinking lights",
+      "title": "GardenShare", 
+      "description": "A site for tracking and trading surplus garden crops with local gardeners.  Under construction.", 
+      "screenshot": "https://www.realmofhistory.com/wp-content/uploads/2016/07/animation-hanging-gardens-of-babylon_1-770x437.jpg", 
+      "technologiesUsed": "HTML, SCSS, JS, React, Webpack, Firebase, Axios, Bootstrap",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://www.google.com", 
+      "githubUrl": "https://github.com/Rfishernc/gardenshare",
+      "components": {
+        "modal": "Under Construction"
+      }
     },
     "project4": {
       "title": "The Not Cool Project", 

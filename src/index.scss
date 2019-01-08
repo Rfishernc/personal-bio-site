@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: darkkhaki;
+  background-color: darkslategrey;
 }
 
 .mainContainer {
@@ -25,7 +25,7 @@ body {
   border: 2px black solid;
   border-radius: 3px;
   margin-left: 1%;
-  width: 45%;
+  width: 500px;
   margin: 2%;
 }
 
@@ -35,6 +35,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cardTitle {
@@ -46,22 +48,51 @@ body {
   padding-left: 2%;
 }
 
-.cardLink {
+.cardLinkDiv {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
+  background-color: beige;
+  border: black 1px solid;
+  border-radius: 2px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardLink {
+  margin-left: 10px;
 }
 
 footer {
   position: fixed;
   bottom: 1px;
-  left: 0.1%;
-  background-color: wheat;
-  width: 99.5%;
-  border: 2px black solid;
+  background-color: #007bff;
+  width: 100%;
+  border: 1.5px black solid;
+  box-shadow: 0 -1px 2px;
 }
 
 .footPar {
+  margin-top: 8px;
   line-height: 0.25;
+  margin-right: 20px;
+}
+
+.footDiv {
+  display: flex;
+  justify-content: left;
+}
+
+
+.footerLink {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 2px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  margin-right: 20px;
 }
 
 .name {
@@ -162,7 +193,6 @@ footer {
   left: 0;
   top: 0;
   display: flex;
-  z-index: 8000;
 }
 
 #technologiesPage {
@@ -171,4 +201,28 @@ footer {
   top: 0;
   display: inline;
   z-index: 300;
+}
+
+.compDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.compButton {
+  margin: 5px;
+}
+
+.modalImg {
+  width: 95%;
+  margin-left: 12px;
+}
+
+.modal-content {
+  background-color: burlywood;
+}
+
+.modalPar {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
