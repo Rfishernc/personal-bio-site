@@ -73,25 +73,36 @@ footer {
 }
 
 .footPar {
-  margin-top: 8px;
+  margin-top: 10px;
   line-height: 0.25;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 .footDiv {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  background-color: burlywood;
+  width: 480px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .footerLink {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 4px;
   padding: 2px;
   margin-bottom: 2px;
   margin-top: 0;
   margin-right: 20px;
+}
+
+.footerRight {
+  margin-right: 0;
 }
 
 .name {
