@@ -2,6 +2,8 @@ import $ from 'jquery';
 import 'bootstrap';
 import projectData from '../data/projectsData';
 
+let cardState = 'off';
+
 const hideForProjects = () => {
   $('#techPage').hide();
   $('#resumePage').hide();
@@ -16,8 +18,14 @@ const clipForProjects = () => {
 
 const clickedCard = () => {
   $('.cardHeader').on('click', ((event) => {
-    $('.cardBody').hide();
-    $(event.target).siblings().show();
+    if (cardState === 'off') {
+      $('.cardBody').hide();
+      $(event.target).siblings().show();
+      cardState = 'on';
+    } else {
+      $(event.target).siblings().hide();
+      cardState = 'off';
+    }
   }));
 };
 
@@ -36,7 +44,7 @@ const createProjectCards = () => {
         for (let j = 0; j < compArray.length; j += 1) {
           componentString += `<button class='btn btn-sm btn-info compButton' data-toggle="modal" data-target="#${modalArray[j]}">${compArray[j]}</button>`;
         }
-        tempString += `<div class='card'>
+        tempString += `<div class='card projectCard'>
                         <button class='btn btn-primary cardHeader'>${projects[i].title}</button>
                         <div class='cardBody' style='display:none'>
                           <img src='${projects[i].screenshot}' class='cardScreen'>
@@ -53,13 +61,13 @@ const createProjectCards = () => {
                       </div>`;
       }
     }
-    $('#projectsPage').html(tempString);
+    $('#projectsPage').append(tempString);
     clickedCard();
   }).catch();
 };
 
 const projectsBuilder = () => {
-  const tempString = `<p class='title'>Projects</p>
+  const tempString = `<p class='projectsTitle'>Projects Portfolio</p>
                         <div class="fullPage" id="projectsPage"></div>`;
   $('#projectsPage').html(tempString);
   createProjectCards();
@@ -70,7 +78,7 @@ const projectsBuilder = () => {
 };
 
 const initialLoad = () => {
-  const tempString = `<p class='title'>Projects</p>
+  const tempString = `<p class='projectsTitle'>Projects Portfolio</p>
                         <div class="fullPage" id="projectsPage"></div>`;
   $('#projectsPage').html(tempString);
   createProjectCards();
