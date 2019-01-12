@@ -74,11 +74,12 @@ const projectsBuilder = () => {
   // $('.mainPage').hide();
   $('#projectsPage').show();
   clipForProjects();
-  setTimeout(hideForProjects, 4000);
+  hideForProjects();
 };
 
 const initialLoad = () => {
   const tempString = `<p class='projectsTitle'>Projects Portfolio</p>
+                      <p class='projectsTitle' id='menuHelp'>Click and hold the mouse button to access the site menu</p>
                         <div class="fullPage" id="projectsPage"></div>`;
   $('#projectsPage').html(tempString);
   createProjectCards();

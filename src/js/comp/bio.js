@@ -24,7 +24,7 @@ const bioBuilder = () => {
   // $('.mainPage').hide();
   $('#bioPage').show();
   clipForBio();
-  setTimeout(hideForBio, 4000);
+  hideForBio();
 };
 
 export default {

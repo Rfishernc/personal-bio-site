@@ -225,6 +225,11 @@ footer {
   border-radius: 3px;
   box-shadow: 2px 2px;
   font-size: 1.5em;
+  z-index: 10;
+}
+
+#menuHelp {
+  margin-bottom: 0;
 }
 
 .cardBody {
@@ -277,4 +282,10 @@ footer {
 
 .hideMe {
   display: none;
+}
+
+#resumeFrame {
+  width: 900px;
+  height: 620px;
+  background-color: burlywood;
 }
