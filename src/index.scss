@@ -63,6 +63,13 @@ body, html {
   margin-left: 10px;
 }
 
+#bioImg {
+  width: 80%;
+  border: 2px outset black;
+  border-radius: 3px;
+  margin-bottom: 5%;
+}
+
 footer {
   position: fixed;
   bottom: 1px;
@@ -70,6 +77,37 @@ footer {
   width: 100%;
   border: 1.5px black solid;
   box-shadow: 0 -1px 2px;
+}
+
+.solarWorkTitle {
+  text-align: center;
+}
+
+.solarModalImg {
+  width: 250px;
+  height: 200px;
+}
+
+.solarContent {
+  max-width: 60%;
+}
+
+.solarWorkDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1%;
+}
+
+.solarType {
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin-bottom: 1%;
+  background-color: deepskyblue;
+}
+
+#solarConst {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .footPar {
@@ -232,6 +270,22 @@ footer {
   margin-bottom: 0;
 }
 
+.buttonIcon {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.bioBut {
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#menuHelpContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .cardBody {
   max-height: 500px;
   overflow: auto;
@@ -269,15 +323,21 @@ footer {
   margin-bottom: 5px;
 }
 
+#bioButtonsDiv {
+  margin-top: 2%;
+}
+
 .bioDiv {
   background-color: white;
   border: 2px solid black;
   border-radius: 4px;
   box-shadow: 3px 3px 1px;
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .hideMe {

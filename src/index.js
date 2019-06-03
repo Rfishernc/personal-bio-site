@@ -1,11 +1,11 @@
 import 'bootstrap';
 import './index.scss';
 import eventz from './js/comp/events';
-import projectsComp from './js/comp/projects';
+import bioComp from './js/comp/bio';
 
 const init = () => {
   eventz.menuSelect();
-  projectsComp.initialLoad();
+  bioComp.initialLoad();
   eventz.clickedAndHeld();
 };
 

@@ -77,17 +77,8 @@ const projectsBuilder = () => {
   hideForProjects();
 };
 
-const initialLoad = () => {
-  const tempString = `<p class='projectsTitle'>Projects Portfolio</p>
-                      <p class='projectsTitle' id='menuHelp'>Click and hold the mouse button to access the site menu</p>
-                        <div class="fullPage" id="projectsPage"></div>`;
-  $('#projectsPage').html(tempString);
-  createProjectCards();
-};
-
 export default {
   createProjectCards,
-  initialLoad,
   projectsBuilder,
   // createProjectCards2,
 };
