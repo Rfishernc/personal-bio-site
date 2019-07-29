@@ -8,7 +8,8 @@
     "lint": "eslint ./src --ext .js",
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot",
     "start": "npm run lint && npm run dev",
-    "projects": "json-server db/personalProjects.json --port 3003"
+    "projects": "json-server db/personalProjects.json --port 3003",
+    "deploy": "npm run build && firebase deploy"
   },
   "repository": {
     "type": "git",
@@ -41,11 +42,19 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.2.1",
+    "datatables.net": "^1.10.19",
+    "es6-promise": "^4.2.5",
     "firebase": "^5.5.8",
+    "hammerjs": "^2.0.8",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.4",
-    "snapsvg": "^0.5.1"
+    "mdbootstrap": "^4.6.1",
+    "node-waves": "^0.7.6",
+    "popper.js": "^1.14.6",
+    "snapsvg": "^0.5.1",
+    "underscore": "^1.9.1",
+    "wow.js": "^1.2.2"
   }
 }

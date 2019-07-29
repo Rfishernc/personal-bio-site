@@ -54,10 +54,10 @@ const clipForTech = () => {
 };
 
 const techsBuilder = () => {
-  setTimeout(hideForTech, 4000);
-  clipForTech();
   // $('.mainPage').hide();
   $('#techPage').show();
+  clipForTech();
+  hideForTech();
   devBuilder().then((tempString) => {
     nondevBuilder(tempString);
   })

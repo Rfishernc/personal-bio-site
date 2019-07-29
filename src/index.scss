@@ -1,11 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
-html, body {
-  margin: 0; height: 100%; overflow: hidden;
-}
-
-body {
-  background-color: darkkhaki;
+body, html {
+  background-image: url('../images/photos/sld.PNG');
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .mainContainer {
@@ -25,7 +24,7 @@ body {
   border: 2px black solid;
   border-radius: 3px;
   margin-left: 1%;
-  width: 45%;
+  width: 500px;
   margin: 2%;
 }
 
@@ -35,6 +34,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cardTitle {
@@ -46,22 +47,100 @@ body {
   padding-left: 2%;
 }
 
-.cardLink {
+.cardLinkDiv {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
+  background-color: beige;
+  border: black 1px solid;
+  border-radius: 2px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardLink {
+  margin-left: 10px;
+}
+
+#bioImg {
+  width: 80%;
+  border: 2px outset black;
+  border-radius: 3px;
+  margin-bottom: 5%;
 }
 
 footer {
   position: fixed;
   bottom: 1px;
-  left: 0.1%;
-  background-color: wheat;
-  width: 99.5%;
-  border: 2px black solid;
+  background-color: #007bff;
+  width: 100%;
+  border: 1px white solid;
+  box-shadow: 0 -1px 2px;
+}
+
+.solarWorkTitle {
+  text-align: center;
+}
+
+.solarModalImg {
+  width: 250px;
+  height: 200px;
+}
+
+.solarContent {
+  max-width: 60%;
+}
+
+.solarWorkDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1%;
+}
+
+.solarType {
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin-bottom: 1%;
+  background-color: deepskyblue;
+}
+
+#solarConst {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .footPar {
+  margin-top: 10px;
   line-height: 0.25;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.footDiv {
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  width: 480px;
+  border: 1.5px solid white;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.footerLink {
+  padding: 2px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.footerRight {
+  margin-right: 0;
 }
 
 .name {
@@ -162,7 +241,54 @@ footer {
   left: 0;
   top: 0;
   display: flex;
-  z-index: 8000;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/88081/1285977495.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.projectCard {
+  width: 960px;
+}
+
+.projectsTitle {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  background-color: burlywood;
+  width: 440px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  box-shadow: 2px 2px;
+  font-size: 1.5em;
+  z-index: 10;
+}
+
+#menuHelp {
+  margin-bottom: 0;
+}
+
+.buttonIcon {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.bioBut {
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#menuHelpContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardBody {
+  max-height: 500px;
+  overflow: auto;
 }
 
 #technologiesPage {
@@ -171,4 +297,56 @@ footer {
   top: 0;
   display: inline;
   z-index: 300;
+}
+
+.compDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.compButton {
+  margin: 5px;
+}
+
+.modalImg {
+  width: 95%;
+  margin-left: 12px;
+}
+
+.modal-content {
+  background-color: lightgray;
+}
+
+.modalPar {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#bioButtonsDiv {
+  margin-top: 2%;
+}
+
+.bioDiv {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: lightgray;
+}
+
+.hideMe {
+  display: none;
+}
+
+#resumeFrame {
+  width: 900px;
+  height: 620px;
+  background-color: burlywood;
 }

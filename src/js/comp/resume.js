@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import resumeData from '../data/resumeData';
 
 const hideForResume = () => {
   $('#projectsPage').hide();
@@ -13,14 +14,19 @@ const clipForResume = () => {
 };
 
 const resumeBuilder = () => {
-  const tempString = `<div class='fullPage' id='resumePage'>
-                        <p class='title'>Resume</p>
-                      </div>`;
-  $('#resumePage').html(tempString);
-  // $('.mainPage').hide();
-  $('#resumePage').show();
-  clipForResume();
-  setTimeout(hideForResume, 4000);
+  resumeData.getResume().then((resume) => {
+    const tempString = `<div class='fullPage' id='resumePage'>
+    <iframe id='resumeFrame' src=${resume}/>
+  </div>`;
+    $('#resumePage').html(tempString);
+    // $('.mainPage').hide();
+    $('#resumePage').show();
+    clipForResume();
+    hideForResume();
+  })
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
 export default {
